@@ -3,7 +3,7 @@ package com.example.android.monitor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class summary extends AppCompatActivity {
+public class SummaryActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
