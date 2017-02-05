@@ -17,26 +17,30 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Monitor"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+        android:onClick="monior"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Summary"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+        android:onClick="summary"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="profile"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+        android:onClick="profile"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="settings"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+        android:onClick="settings"/>
 </LinearLayout>
