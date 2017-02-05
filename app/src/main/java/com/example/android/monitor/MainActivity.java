@@ -5,17 +5,8 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-
-import static android.R.attr.name;
 
 public class MainActivity extends AppCompatActivity {
-
-    EditText name = (EditText) findViewById(R.id.name);
-    EditText branch = (EditText)findViewById(R.id.branch);
-    EditText semester = (EditText)findViewById(R.id.semester);
-
-    SharedPreferences sharedPreferences = getSharedPreferences("MyData", MODE_PRIVATE);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void settings(View view) {
-        Intent i = new Intent(this, MonitorActivity.class);
+        Intent i = new Intent(this, SettingsActivity.class);
         startActivity(i);
     }
 }

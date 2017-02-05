@@ -20,8 +20,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name: "
-            android:textSize="30sp" />
+            android:text="Name:       "
+            android:textSize="24sp"
+            android:paddingTop="16dp"/>
 
         <EditText
             android:id="@+id/name"
@@ -29,7 +30,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:text=""
-            android:textSize="30sp" />
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -41,8 +42,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
-            android:text="Branch: "
-            android:textSize="30sp" />
+            android:text="Branch:     "
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/branch"
@@ -50,7 +51,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:text=""
-            android:textSize="30sp" />
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -63,7 +64,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:text="Semester: "
-            android:textSize="30sp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/semester"
@@ -71,15 +72,15 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:text=""
-            android:textSize="30sp" />
+            android:textSize="24sp" />
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="16dp"
+        android:paddingTop="40dp"
         android:text="Date:"
-        android:textSize="30sp" />
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -89,41 +90,41 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="40dp"
-            android:paddingTop="16dp"
+            android:paddingLeft="20dp"
             android:text="Start of Sem: "
-            android:textSize="30sp" />
+            android:textSize="24sp" />
 
         <EditText
+            android:id="@+id/s_date"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:text=""
-            android:textSize="30sp" />
+            android:textSize="24sp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
             android:text="-"
             android:textSize="30sp" />
         <EditText
+            android:id="@+id/s_month"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:text=""
-            android:textSize="30sp" />
+            android:textSize="24sp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
             android:text="-"
             android:textSize="30sp" />
         <EditText
-            android:layout_width="40dp"
+            android:id="@+id/s_year"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:text=""
-            android:textSize="30sp" />
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -134,17 +135,44 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="40dp"
-            android:paddingTop="16dp"
-            android:text="End of Sem: "
-            android:textSize="30sp" />
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:text="End of Sem:   "
+            android:textSize="24sp" />
 
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/e_date"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:text=""
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="-"
             android:textSize="30sp" />
+        <EditText
+            android:id="@+id/e_month"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text=""
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="-"
+            android:textSize="30sp" />
+        <EditText
+            android:id="@+id/e_year"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text=""
+            android:textSize="24sp" />
     </LinearLayout>
 
     <RelativeLayout
@@ -158,6 +186,6 @@
             android:layout_centerHorizontal="true"
             android:text="submit"
             android:textSize="26sp"
-            android:onClick="submit"/>
+            android:onClick="save"/>
     </RelativeLayout>
 </LinearLayout>
